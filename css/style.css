@@ -4,7 +4,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin:0;
   }
 
@@ -18,6 +18,14 @@ span{
     float:right;
 }
 
+.nav-link{
+    font-size: 1rem;
+    margin-left: 65px;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
 .main-information{
  position: absolute;
  margin-top: 300px;
@@ -26,6 +34,15 @@ span{
 
 .main-information h1{
     color:white;
+    font-size: 10rem;
+}
+.btn-dark{
+    width: 120px;
+    background-color: rgba(136, 46, 136, 0.705);
+}
+
+.btn-dark:hover{
+    background-color: rgba(179, 54, 179, 0.705);
 }
 
 .row{
@@ -36,14 +53,68 @@ span{
     margin-left: 20px;
 }
 
-  .card-body{
-      background: black;
-  }
+.card-body{
+    background: black;
+}
 
-  .card-body p{
-      color:white;
-  }
+.card-body p{
+    color:white;
+}
 
   .card-body h5{
     color:white;
 }
+.card-img-top{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.card-img-top:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    .main-information{
+        position: relative;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .row{
+        margin-top: 30px;
+    }
+    }
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+
+    .main-information{
+        position: relative;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .row{
+        margin-top: 30px;
+    }
+    
+    }
+
+    @media screen and (max-width: 1000px) {
+        /* start of phone styles */
+    
+        .main-information{
+            position: relative;
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+    
+        .row{
+            margin-top: 30px;
+        }
+        
+        }
