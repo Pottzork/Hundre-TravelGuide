@@ -1,9 +1,87 @@
-body {
-    background: url('https://images.unsplash.com/photo-1590117051772-76cb36cf9007?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1773&q=80') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    font-family: 'Montserrat', sans-serif;
+
+* {
     margin:0;
-  }
+    padding:0;
+    font-family: 'montserrat', sans-serif;
+}
+
+body{
+    background: #0a2a43;
+    min-height: 1440px;
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10000;
+}
+section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a2a43;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text{
+    position: absolute;
+    margin-top: 380px;
+    color: white;
+    font-size: 10em;
+    z-index: 1;
+    color: #202c2d;
+    text-shadow:
+      0 1px #808d93,
+      -1px 0 #cdd2d5,
+      -1px 2px #808d93,
+      -2px 1px #cdd2d5,
+      -2px 3px #808d93,
+      -3px 2px #cdd2d5,
+      -3px 4px #808d93,
+      -4px 3px #cdd2d5,
+      -4px 5px #808d93,
+      -5px 4px #cdd2d5,
+      -5px 6px #808d93,
+      -6px 5px #cdd2d5,
+      -6px 7px #808d93,
+      -7px 6px #cdd2d5,
+      -7px 8px #808d93,
+      -8px 7px #cdd2d5;
+}
+
+#middle{
+    z-index: 2;
+}
+
+#front{
+    z-index:3;
+}

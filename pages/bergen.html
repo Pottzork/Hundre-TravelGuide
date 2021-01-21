@@ -43,6 +43,33 @@
             </ul>
         </div>
     </nav>
+    <section>
+        <img src="/ToBeImportedImages/Bergen/BackLayer.png" id="bg">
+        <img src="/ToBeImportedImages/Bergen/MiddleLayer.png" id="middle">
+        <img src="/ToBeImportedImages/Bergen/FrontLayer.png" id="front">
+        <h2 id="text">Bergen</h2>
+    </section>
+    <div class="container-fluid">
+        <div class="info-bg">
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let middle = document.getElementById("middle");
+        let front = document.getElementById("front");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.15 + 'px';
+            middle.style.top = -value * 0.15 + 'px';
+            front.style.top = -value * 0.60 + 'px';
+            text.style.top = value * 0.80 + 'px';
+        });
+    </script>
 
     <!-- myscript -->
     <script src="javascript/script.js"></script>
