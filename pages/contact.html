@@ -19,6 +19,8 @@
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center">
         <a href="/" class="navbar-brand d-flex w-50 mr-auto">Hundré</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
@@ -33,7 +35,7 @@
                     <a class="nav-link" href="pages/destinations.html">Destinations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="/pages/news.html">News</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="pages/contact.html">Contact</a>
@@ -46,6 +48,8 @@
             </ul>
         </div>
     </nav>
+
+    <!-- CONTACT FORM -->
     <div class="container">
         <form action="action_page.php">
 
@@ -55,44 +59,38 @@
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-            </select>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
 
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Ask us anything.." style="height:200px"></textarea>
 
             <input type="submit" value="Submit">
             <p class="map-info">You can find us here</p>
-            <div class="mapouter">
+            <div class="map">
                 <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
                         src="https://maps.google.com/maps?q=fabriksgatan%207&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                        href="https://123movies-to-org.blogspot.com"></a><br>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 500px;
-                            width: 600px;
-                        }
-                    </style><a href="https://google-map-generator.com">how to embed google map in html</a>
-                    <style>
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 500px;
-                            width: 600px;
-                        }
-                    </style>
+                        frameborder="0"></iframe><a href="https://123movies-to-org.blogspot.com"></a><br>
                 </div>
             </div>
 
         </form>
     </div>
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
