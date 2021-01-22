@@ -13,6 +13,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/footer.css">
     <title>Document</title>
 </head>
@@ -45,26 +46,53 @@
             </ul>
         </div>
     </nav>
-    <!-- Site footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                        <a href="#">Scanfcode</a>.
-                    </p>
-                </div>
+    <div class="container">
+        <form action="action_page.php">
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+            <p class="map-info">You can find us here</p>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=fabriksgatan%207&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://123movies-to-org.blogspot.com"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 600px;
+                        }
+                    </style><a href="https://google-map-generator.com">how to embed google map in html</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 500px;
+                            width: 600px;
+                        }
+                    </style>
                 </div>
             </div>
-        </div>
-    </footer>
+
+        </form>
+    </div>
 </body>
 
 </html>
