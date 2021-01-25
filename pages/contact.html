@@ -2,11 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://use.fontawesome.com/4066d76eef.js"></script>
+    <link rel="stylesheet" href="../css/nav.css">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <!-- Firebase script -->
+    <script src="/javascript/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
@@ -14,40 +20,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/footer.css">
+
     <title>Document</title>
 </head>
 
 <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center">
-        <a href="/" class="navbar-brand d-flex w-50 mr-auto">Hundré</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-            <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/destinations.html">Destinations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/news.html">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/contact.html">Contact</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sign in</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
 
     <!-- CONTACT FORM -->
     <div class="container">
@@ -67,7 +54,7 @@
             <textarea id="subject" name="subject" placeholder="Ask us anything.." style="height:200px"></textarea>
 
             <input type="submit" value="Submit">
-            <p class="map-info">You can find us here</p>
+            <span class="map-info">You can find us here</span>
             <div class="map">
                 <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
                         src="https://maps.google.com/maps?q=fabriksgatan%207&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -78,19 +65,6 @@
         </form>
     </div>
 
-
-
-
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

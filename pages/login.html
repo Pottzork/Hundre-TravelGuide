@@ -2,29 +2,39 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="../css/nav.css">
     <title>Document</title>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
     <!-- Firebase script -->
     <script src="/javascript/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 
 
 <body>
-    <div class="formContainer">
-        <input id="Email" type="email" placeholder="Email">
-        <input id="Password" type="password" placeholder="Password">
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
 
-        <button id="btnSignIn" onclick="signIn()">Log in</button>
-        <button id="btnSignUp" onclick="signUp()">Sign up</button>
-
-        <button id="btnSignOut" onclick="signOut()">Log out</button>
     </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
 
 </body>
 

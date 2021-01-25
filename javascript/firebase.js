@@ -49,14 +49,27 @@ auth.onAuthStateChanged(function (user) {
 
         document.getElementById("btnSignOut").style.visibility = "visible";
         document.getElementById("btnSignIn").style.visibility = "hidden";
+        document.getElementById("signInNav").style.visibility = "hidden";
+        document.getElementById("loginForm").style.visibility = "hidden";
+        document.getElementById("userDisplayText").style.visibility = "visible";
+        document.getElementById("userDisplayText").textContent = "Signed in as: " + email;
 
     } else {
         //no user is signed in
 
         document.getElementById("btnSignOut").style.visibility = "hidden";
-        document.getElementById("btnSignIn").style.visibility = "visible";
+        document.getElementById("btnSignIn").style.visibility = "hidden";
+        document.getElementById("signInNav").style.visibility = "visible";
+        document.getElementById("loginForm").style.visibility = "hidden";
+        document.getElementById("userDisplayText").style.visibility = "hidden";
     }
 });
+
+function showLoginForm() {
+    document.getElementById("loginForm").style.visibility = "visible";
+    document.getElementById("btnSignIn").style.visibility = "visible";
+    document.getElementById("btnSignOut").style.visibility = "hidden";
+}
 
 // firebase.auth.onAuthStateChanged(firebaseUser => {
 //     if (firebaseUser) {

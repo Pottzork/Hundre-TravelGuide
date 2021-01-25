@@ -1,0 +1,37 @@
+<nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center">
+    <a href="/" class="navbar-brand d-flex w-50 mr-auto">Hundré</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/destinations.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/contact.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+            <li class="nav-item">
+                <a id="signInNav" class="nav-link" onclick="showLoginForm()">Sign in</a>
+                <p id="userDisplayText" style="visibility: hidden;">userplaceholder</p>
+            </li>
+        </ul>
+        <div id="loginForm" class="formContainer" style="visibility: hidden;">
+            <input id="Email" type="email" placeholder="Email">
+            <input id="Password" type="password" placeholder="Password">
+
+            <button id="btnSignIn" onclick="signIn()">Log in</button>
+            <button id="btnSignUp" onclick="signUp()">Sign up</button>
+
+            <button id="btnSignOut" onclick="signOut()" style="visibility: hidden;">Log out</button>
+        </div>
+    </div>
+</nav>
