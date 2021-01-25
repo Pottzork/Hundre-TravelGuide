@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <!-- Firebase script -->
+    <script src="/javascript/firebase.js"></script>
+</head>
+
+
+
+<body>
+    <div class="formContainer">
+        <input id="Email" type="email" placeholder="Email">
+        <input id="Password" type="password" placeholder="Password">
+
+        <button id="btnSignIn" onclick="signIn()">Log in</button>
+        <button id="btnSignUp" onclick="signUp()">Sign up</button>
+
+        <button id="btnSignOut" onclick="signOut()">Log out</button>
+    </div>
+
+</body>
+
+</html>

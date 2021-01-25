@@ -12,7 +12,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/singin.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Travel with Hundré</title>
 </head>
@@ -40,7 +39,7 @@
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" onclick="document.getElementById('id01').style.display='block'">Sign in</a>
+                    <a class="nav-link" href="pages/login.html">Sign in</a>
                 </li>
             </ul>
         </div>
@@ -55,64 +54,38 @@
     </div>
     <!-- Page Content -->
     <div class="container">
-<main class="page-content">
-    <div class="card">
-        <div class="content">
-            <h2 class="title">Norway</h2>
-            <h3 class="title">Bergen</h3>
-            <p class="copy">you guessed it, the mountains</p><button class="btn">Visit</button>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2 class="title">Czech Republic</h2>
-            <h3 class="title">Prague</h3>
-            <p class="copy">Plan your next beach trip with these fabulous destinations</p><button class="btn">Visit</button>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2 class="title">Desert Destinations</h2>
-            <p class="copy">It's the desert you've always dreamed of</p><button class="btn">Visit</button>
-        </div>
-    </div>
-    <div class="card">
-        <div class="content">
-            <h2 class="title">Explore The Galaxy</h2>
-            <p class="copy">Seriously, straight up, just blast off into outer space today</p><button class="btn">Visit</button>
-        </div>
-    </div>
-</main>
-    </div>
-
-    <div id="id01" class="modal">
-
-        <form class="modal-content animate" action="/action_page.php" method="post">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                    title="Close Modal">&times;</span>
+        <main class="page-content">
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Norway</h2>
+                    <h3 class="title">Bergen</h3>
+                    <p class="copy">you guessed it, the mountains</p><button class="btn">Visit</button>
+                </div>
             </div>
-
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Czech Republic</h2>
+                    <h3 class="title">Prague</h3>
+                    <p class="copy">Plan your next beach trip with these fabulous destinations</p><button
+                        class="btn">Visit</button>
+                </div>
             </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                    class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Desert Destinations</h2>
+                    <p class="copy">It's the desert you've always dreamed of</p><button class="btn">Visit</button>
+                </div>
             </div>
-        </form>
+            <div class="card">
+                <div class="content">
+                    <h2 class="title">Explore The Galaxy</h2>
+                    <p class="copy">Seriously, straight up, just blast off into outer space today</p><button
+                        class="btn">Visit</button>
+                </div>
+            </div>
+        </main>
     </div>
+
 
     <!-- myscript -->
     <script src="/javascript/script.js"></script>
