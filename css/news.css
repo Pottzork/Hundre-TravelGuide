@@ -24,7 +24,8 @@ body {
   }
 
   .waterfall-video{
-       margin: auto; display: block;
+        object-fit: cover;
+        border-bottom: 5px solid black;
     }
 
 #News{
@@ -42,9 +43,19 @@ body {
     }
   #bali{
     position: absolute;
-    top: 50px;
+    top: 75px;
     left: 15px;
     background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #newDestination{
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    background-color: rgb(111, 0, 255);
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -81,7 +92,7 @@ body {
       font-family: 'Oswald';
       letter-spacing: 1px;
       font-size: large;
-      background-color: rgb(34, 185, 160);
+      background-color: rgb(111, 0, 255);
   }
   .bg-3 { 
     background-color: #ffffff; /* White */
