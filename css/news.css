@@ -13,7 +13,9 @@ body {
     text-transform: uppercase;
    }
 
-  p {font-size: 16px;}
+  p {font-size: 16px;
+    margin-left: 10%;
+    margin-right: 10%;}
   .margin {margin-bottom: 45px;}
 
 
@@ -51,6 +53,18 @@ body {
     padding-right: 20px;
   }
 
+  #Gothenburg{
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 180px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+
+  }
+
   #newDestination{
     position: absolute;
     top: 40px;
@@ -64,7 +78,7 @@ body {
   .Bali-info{
       position: absolute;
       bottom:0;
-      background: rgb(37, 37, 37);
+      background: rgba(0, 0, 0, 0.596);
       margin-left: 10px;
       margin-right: 10px;
       border-radius: 10px;
@@ -85,6 +99,7 @@ body {
     height: 700px;
     padding-top: 0px;
     padding-left: 0px;
+    border-bottom: 3px solid;
   }
 
   .btn-secondary{
@@ -136,11 +151,16 @@ body {
     .Bali-info{
         position:absolute;
         top: 65%;
-        background: rgb(37, 37, 37);
+        background: rgba(0, 0, 0, 0.596);
         margin-left: 10%;
         margin-right: 10%;
         border-radius: 10px;
         padding: 20px;
+        
+    }
+
+    .Bali-info p{
+      font-size: 18px;
     }
 
     .bali-img{
@@ -171,5 +191,27 @@ body {
     #HQ-Picture{
         align-self: center;
         width: 80%;
+    }
+    #contactBtn{
+      position:relative;
+      left:45%;
+    }
+
+    #visitBtn{
+      bottom: 20px;
+      display: inline-block;
+    }
+  }
+
+
+  @media(min-width: 1250px){
+    .Bali-info{
+      margin-left: 15%;
+      margin-right: 15%;
+      top: 500px;
+    }
+
+    p{
+      font-size: 22px;
     }
   }
