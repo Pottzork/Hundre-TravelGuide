@@ -1,5 +1,6 @@
 body {
-    background: url('https://images.unsplash.com/photo-1590117051772-76cb36cf9007?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1773&q=80') no-repeat center center fixed;
+    background: url(../images/BackgroundDesktop.jpg);
+    background-repeat: no-repeat; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -24,9 +25,10 @@ span{
 }
 
 .main-information{
- position: absolute;
- margin-top: 300px;
- margin-left: 240px;
+ position: absolute; 
+ margin-top: 17%;
+ margin-left: 10%;
+    
 }
 
 .main-information h1{
@@ -55,16 +57,13 @@ span{
 	 box-sizing: border-box;
 }
 
-
- @media (min-width: 600px) {
-	 .page-content {
-		 grid-template-columns: repeat(2, 1fr);
-	}
-}
- @media (min-width: 1000px) {
-	 .page-content {
-		 grid-template-columns: repeat(4, 1fr);
-	}
+.footer{
+    color: white;
+    width: 100%;
+    font-size: 10px;
+    margin-top: 20px;
+    position: absolute;
+    bottom:0;
 }
 
 .wrapper{
@@ -90,6 +89,8 @@ h2{
  .card {
 	 position: relative;
 	 display: flex;
+     max-height: 350px;
+     min-height: 350px;
 	 align-items: flex-end;
 	 overflow: hidden;	 padding: 1rem;
 	 width: 100%;
@@ -97,25 +98,6 @@ h2{
 	 color: black;
 	 background-color: Black;
 	 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
-}
- @media (min-width: 600px) {
-	 .card {
-		 height: 350px;
-	}
-}
-
-.card:nth-child(4){
-    height: 300px;
-    width: 200px;
-    margin-top: 25px;
-    opacity: 0.5;
-}
-.card:nth-child(4):after{
-  z-index  : 1;
-  pointer-events   : none;
-  background-image : linear-gradient(to right, 
-                    rgba(255,255,255, 0), 
-                    rgba(0,0,0, 1) 60%);
 }
 
 
@@ -145,25 +127,30 @@ h2{
 	 transition: transform calc(var(--d) * 2) var(--e);
 }
  .card1:before {
-	 background-image: url(https://images.unsplash.com/photo-1515169251401-69e938cbc25f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2151&q=80);
+	 background-image: url(https://images.unsplash.com/photo-1612437118912-ec24644cf846?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80);
 }
  .card2:before {
-	 background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+	 background-image: url(https://images.unsplash.com/photo-1591649389515-2e1640c7ac8d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
 }
  .card3:before {
-	 background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+	 background-image: url(https://images.unsplash.com/photo-1573790387438-4da905039392?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80);
 }
  .card4:before {
-	 background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+	 background-image: url(https://images.unsplash.com/photo-1503899036084-c55cdd92da26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
 
 }
  .card5:before {
-	 background-image: url(https://images.unsplash.com/photo-1515169251401-69e938cbc25f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2151&q=80);
+	 background-image: url(https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80);
 
 }
- .card6:before {
-	 background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 
+.cardTitle{
+   	 position: relative;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 width: 100%;
+	 padding: 1rem;
 }
  .content {
 	 position: relative;
@@ -207,7 +194,7 @@ h2{
  .btn:focus {
 	 outline-offset: 3px;
 }
- @media (hover: hover) and (min-width: 600px) {
+ @media (hover: hover) and (min-width: 992px) {
 
 	 .card:after {
 		 transform: translateY(0);
@@ -240,5 +227,173 @@ h2{
 	 .card:focus-within:before, .card:focus-within:after, .card:focus-within .content, .card:focus-within .content > *:not(.title) {
 		 transition-duration: 0s;
 	}
+     .footer{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+}
      
 }
+
+
+
+@media (max-width: 992px){
+    body{
+        background: url(../images/BackgroundIpad.jpg);
+
+    }
+    
+    .card {
+        margin-top: 20px;
+        max-height: 200px;
+        min-height: 200px;
+        min-width: 350px;
+        max-width: 350px;
+     
+	}
+    .main-information{
+         position: absolute;
+         margin-top: 20px;
+         margin-left: 24px;
+    }
+    .main-information h1{
+        
+        font-size: 3rem;
+    }
+    .main-information span{
+       font-size: 80%;
+        text-align: center;
+    }
+    .wrapper{
+    width:100%;
+    padding-top: 20px;
+    margin-top:180px;
+    float:none;
+    }    
+     .card:after{
+        width: 0%;
+        height: 0%;
+    }
+    .carousel{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+
+    }
+    .card1:before {
+        background-position: center;
+}
+ .card2:before {
+        background-position: center;
+}
+ .card3:before {
+        background-position: center;
+}
+ .card4:before {
+        background-position: center;
+
+}
+ .card5:before {
+        background-position: center;
+
+}
+    .top-div{
+        background-image: url(https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)
+    }
+
+    .main-information{
+         position: absolute;
+         margin-top: 20px;
+         margin-left: 40px;
+        
+    }
+    
+    .footer{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+    position:inherit;
+}
+}
+
+
+@media (max-width: 600px){
+     body{
+         background-image: url(../images/BackgroundMobile.jpg);
+        background-repeat: no-repeat;
+
+    }
+
+    .card {
+        margin-top: 20px;
+        max-height: 150px;
+        min-height: 150px;
+        min-width: 300px;
+        max-width: 400px;
+     
+	}
+    .main-information{
+         position: absolute;
+         margin-top: 20px;
+         margin-left: 24px;
+    }
+    .main-information h1{
+        
+        font-size: 3rem;
+    }
+    .main-information span{
+       font-size: 80%;
+        text-align: center;
+    }
+    .wrapper{
+    width:100%;
+    padding-top: 20px;
+    margin-top:200px;
+    float:none;
+    }
+    
+.card1:before {
+        background-position: center;
+}
+ .card2:before {
+        background-position: center;
+}
+ .card3:before {
+        background-position: center;
+}
+ .card4:before {
+        background-position: center;
+
+}
+ .card5:before {
+        background-position: center;
+
+}
+    
+    .card:after{
+        width: 0%;
+        height: 0%;
+    }
+  
+
+.carousel{
+        display: inherit;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+
+    }
+    
+    .wrapper{
+        margin-top: 150px;
+    }
+    
+.footer{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+    position:inherit;
+}
+    }
