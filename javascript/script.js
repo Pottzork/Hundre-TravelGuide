@@ -12,4 +12,7 @@ $(document).ready(function(){
       settings: "unslick"
     }]
   });
+     $(window).on('resize', function() {
+        $('.carousel').slick('resize');
+    });
 });
