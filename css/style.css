@@ -1,11 +1,8 @@
 body {
+    background-color: black;
     background: url(../images/BackgroundDesktop.jpg);
-    background-repeat: no-repeat; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    font-family: 'Montserrat', sans-serif;
+    object-fit: cover;
+    font-family: 'Cardo', serif;
     margin:0;
   }
 

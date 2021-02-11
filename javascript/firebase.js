@@ -47,34 +47,37 @@ auth.onAuthStateChanged(function (user) {
         //signed in
         var email = user.email;
 
-        document.getElementById("btnSignOut").style.visibility = "visible";
-        document.getElementById("btnSignIn").style.visibility = "hidden";
-        document.getElementById("signInNav").style.visibility = "hidden";
-        document.getElementById("loginForm").style.visibility = "hidden";
-        document.getElementById("userDisplayText").style.visibility = "visible";
+        document.getElementById("btnSignOut").style.display = "inline-block";
+        document.getElementById("btnSignIn").style.display = "none";
+        document.getElementById("signInNav").style.display = "none";
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("userDisplayText").style.display = "inline-block";
         document.getElementById("userDisplayText").textContent = "Signed in as: " + email;
 
     } else {
         //no user is signed in
 
-        document.getElementById("btnSignOut").style.visibility = "hidden";
-        document.getElementById("btnSignIn").style.visibility = "hidden";
-        document.getElementById("signInNav").style.visibility = "visible";
-        document.getElementById("loginForm").style.visibility = "hidden";
-        document.getElementById("userDisplayText").style.visibility = "hidden";
+        document.getElementById("btnSignOut").style.display = "none";
+        document.getElementById("btnSignIn").style.display = "none";
+        document.getElementById("signInNav").style.display = "inline-block";
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("userDisplayText").style.display = "none";
     }
 });
 
 function showLoginForm() {
-    document.getElementById("loginForm").style.visibility = "visible";
-    document.getElementById("btnSignIn").style.visibility = "visible";
-    document.getElementById("btnSignOut").style.visibility = "hidden";
-}
+    var isShowing = false;
 
-// firebase.auth.onAuthStateChanged(firebaseUser => {
-//     if (firebaseUser) {
-//         document.getElementById("btnSignOut").style.display = "block";
-//     } else {
-//         document.getElementById("btnSignOut").style.display = "none";
-//     }
-// })
+    if (isShowing == false) {
+        document.getElementById("loginForm").style.display = "inline-block";
+        document.getElementById("btnSignIn").style.display = "inline-block";
+        document.getElementById("btnSignOut").style.display = "none";
+        isShowing = true;
+    } else if (isShowing == true) {
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("btnSignIn").style.display = "none";
+        document.getElementById("btnSignOut").style.display = "none";
+        isShowing = false;
+    }
+
+}

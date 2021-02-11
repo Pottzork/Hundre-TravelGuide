@@ -1,10 +1,10 @@
 body {
-    background-color: black;
+  background:black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    font-family: 'Cardo', serif;
+    font-family: 'Cardo','Montserrat', serif;
     margin:0;
   }
 
@@ -54,7 +54,7 @@ body {
   }
 
   #Gothenburg{
-    background-color: black;
+
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -144,6 +144,10 @@ body {
     top: 0;
     left: 0;
     opacity: 0.65;  /* for demo purpose  */
+}
+
+#nav-placeholder{
+background-color:rgba(0, 0, 0, 0.698);
 }
 
 

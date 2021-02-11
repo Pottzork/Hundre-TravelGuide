@@ -1,37 +1,44 @@
-<nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center">
-    <a href="/" class="navbar-brand d-flex w-50 mr-auto">Hundré</a>
+<nav class="navbar navbar-dark navbar-expand-md justify-content-center">
+    <a href="index.html" class="navbar-brand d-flex w-50 mr-auto">Hundré</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
         <ul class="navbar-nav w-100 justify-content-center">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="pages/destinations.html">Destinations</a>
+                <a class="nav-link" href="destinations.html">Destinations</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="pages/news.html">News</a>
+                <a class="nav-link" href="news.html">News</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="pages/contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
             </li>
         </ul>
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
             <li class="nav-item">
                 <a id="signInNav" class="nav-link" onclick="showLoginForm()">Sign in</a>
-                <p id="userDisplayText" style="visibility: hidden;">userplaceholder</p>
+                <p id="userDisplayText" style="display: none; color: white; font-size: 16px; font-weight: bold;">
+                    userplaceholder</p>
             </li>
         </ul>
-        <div id="loginForm" class="formContainer" style="visibility: hidden;">
+        <div id="loginForm" class="formContainer" style="display: none;">
             <input id="Email" type="email" placeholder="Email">
             <input id="Password" type="password" placeholder="Password">
 
-            <button id="btnSignIn" onclick="signIn()">Log in</button>
-            <button id="btnSignUp" onclick="signUp()">Sign up</button>
+            <button id="btnSignIn" style="background: black; color: white; width: 100px;" onclick="signIn()">Log
+                in</button>
+            <button id="btnSignUp" style="background: black; color: white; width: 100px;" onclick="signUp()">Sign
+                up</button>
 
-            <button id="btnSignOut" onclick="signOut()" style="visibility: hidden;">Log out</button>
+
         </div>
+        <button id="btnSignOut" onclick="signOut()" style="display: none; 
+        width: 150px; 
+        background-color: black;
+        color: white">Log out</button>
     </div>
 </nav>

@@ -4,43 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hundre travel guide</title>
+
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/news.css">
+    <link rel="stylesheet" href="../css/nav.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+    <!-- Firebase script -->
+    <script src="/javascript/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Bootstrap script -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center">
-        <a href="/" class="navbar-brand d-flex w-50 mr-auto">Hundré</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-            <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="destinations.html">Destinations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sign in</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!--Navigation bar-->
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
 
     <!-- First Container -->
     <div class="container-fluid bg-1 text-center" style="padding: 0px;">
@@ -55,15 +55,17 @@
 
     <!-- Second Container -->
 
-    <div class="container-fluid bg-2 text-center" style="padding-top: 0px; padding-bottom: 0px;">
+    <div class="container-fluid bg-2 text-center" style="padding: 0px;">
 
         <img class="bali-img"
             src="https://images.unsplash.com/photo-1559305289-4c31700ba9cb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2166&q=80">
         <h3 class="margin" id="newDestination">NEW DESTINATION</h3>
         <h3 class="margin" id="bali">Bali, Indonesia</h3>
         <div class="Bali-info">
-            <p>Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and
-                coral reefs. The island is home to religious sites such as cliffside Uluwatu Temple. To the south, the
+            <p>Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches
+                and
+                coral reefs. The island is home to religious sites such as cliffside Uluwatu Temple. To the south,
+                the
                 beachside city of Kuta has lively bars, while Seminyak, Sanur and Nusa Dua are popular resort
                 towns.<q>-google</q> </p>
             <a href="bali.html" id="visitBtn" type="button" class="btn btn-secondary btn-sm">
@@ -89,7 +91,8 @@
                     class="img-responsive margin" alt="Image">
             </div>
             <div class="col-sm-12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore
                     et dolore magna aliqua.</p>
             </div>
             <a id="contactBtn" href="contact.html" type="button" class="btn btn-secondary btn-sm">
@@ -103,19 +106,6 @@
         <p>Hundre copyright <a href="https://www.w3schools.com">www.randomlink.com</a></p>
     </footer>
 
-    <!-- myscript -->
-    <script src="javascript/script.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
