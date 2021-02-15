@@ -1,13 +1,125 @@
-body {
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;    
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;    
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;    
+  }
+}
 
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
+}
+
+body {
+  
     font-family: 'Montserrat', sans-serif;
     margin:0;
   }
 
+.filter-area{
+display: flex;
+flex-direction: row;
+}
+
+.filter-area p{
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.sort-filter{
+  margin-bottom: 20px;
+margin-right: 40px;
+}
+
+.travel-category{
+  margin-bottom: 20px;
+}
+
+.travel-category p{
+  margin-left: 80px;
+}
+
+.travel-category i{
+  margin-right: 10px;
+  color: goldenrod;
+}
+
+
+.banner-logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(0.7);
+}
 
 .center {
   position: absolute;
-  top: 90%;
+  top: 82%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   background-color: transparent;
@@ -128,7 +240,12 @@ body {
   left: 1rem;
   right: 1rem;
   top: auto;
-  color: #000;
+  color: #fff;
+  background: rgba(0,0,0,0.40);
+  padding: 0.125rem 0.75rem;
+  border-radius: 20px;
+  opacity: 0.9;
+  transform: scale(0.8);
 }
 
 
@@ -171,9 +288,36 @@ body {
   text-align: center;
 }
 
+
 .last-card{
   margin-bottom: 100px;
 }
+
+.like-favorite{
+  margin-top:5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+
+.like-heart i:hover{
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  transform: scale(2.5);
+  color:red;
+  transition: 1s;
+  opacity: 0.6;
+}
+
+.like-heart i{
+  margin-right: 40px;
+  transform: scale(2);
+  color:black;
+  opacity: 0.6;
+
+}
+
+
+
 
 @media (min-width: 600px){
 
@@ -189,23 +333,54 @@ body {
   font-size: 15px;
 }
 
+.center{
+  top:100%;
+}
+
+.banner-logo{
+ transform: scale(1.5);
+ margin-bottom: 10%;
+}
+
+.filter-area{
+  margin-bottom: 25%;
+  transform: scale(1.7);
+}
+
 }
 
 @media (min-width: 1024px){
+
+  
+
   .card{
     transform: scale(1.5);
-    margin-left: 400px;
+    margin-left: 300px;
     margin-bottom: 150px;
+
   }
-  .center{
-    top: 80%;
-    left: 45%;
+  .card-wrap{
+    margin-left: -10%;
+    margin-bottom: 10%;
     display: grid;
     grid-template-columns: auto auto;
     
   }
   .footer{
-    margin-left: 9%;
+    margin-left: 9%; 
   }
+
+  .filter-area{
+    margin-bottom: 5%;
+    margin-left: 40%;
+    transform: scale(1.2);
+  }
+.center{
+  top: 75%;
+}
+
+
+
+
 }
 
