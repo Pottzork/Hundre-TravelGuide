@@ -1,0 +1,386 @@
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;    
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;    
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;    
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
+}
+
+body {
+  
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+  }
+
+.filter-area{
+display: flex;
+flex-direction: row;
+}
+
+.filter-area p{
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.sort-filter{
+  margin-bottom: 20px;
+margin-right: 40px;
+}
+
+.travel-category{
+  margin-bottom: 20px;
+}
+
+.travel-category p{
+  margin-left: 80px;
+}
+
+.travel-category i{
+  margin-right: 10px;
+  color: goldenrod;
+}
+
+
+.banner-logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(0.7);
+}
+
+.center {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  background-color: transparent;
+
+}
+
+.card {
+  width: 550px;
+  height: 250px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+  zoom: 0.68;
+  -moz-transform:scale(0.68);
+}
+
+
+
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card1{
+  background: url(https://images.unsplash.com/photo-1612437118912-ec24644cf846?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card2{
+  background: url(https://images.unsplash.com/photo-1591649389515-2e1640c7ac8d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  background-position-y: 50%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+.card3{
+  background: url(https://images.unsplash.com/photo-1573790387438-4da905039392?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card4{
+  background: url(https://images.unsplash.com/photo-1503899036084-c55cdd92da26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  background-position-y: 90%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+.card5{
+  background: url(https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80);
+  background-position-y: 60%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);*}
+
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.60);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+
+
+.card .additional .more-info {
+  width: 400px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+  background: rgba(0,0,0,0.40);
+  padding: 0.125rem 0.75rem;
+  border-radius: 20px;
+  opacity: 0.9;
+  transform: scale(0.8);
+}
+
+
+.card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats i {
+  display: block;
+}
+
+.card .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+.card .general {
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.footer{
+  color: black;
+  width: 100%;
+  font-size: 10px;
+  position: absolute;
+  bottom:0;
+  text-align: center;
+}
+
+
+.last-card{
+  margin-bottom: 100px;
+}
+
+.like-favorite{
+  margin-top:5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+
+.like-heart i:hover{
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  transform: scale(2.5);
+  color:red;
+  transition: 1s;
+  opacity: 0.6;
+}
+
+.like-heart i{
+  margin-right: 40px;
+  transform: scale(2);
+  color:black;
+  opacity: 0.6;
+
+}
+
+
+
+
+@media (min-width: 600px){
+
+.card{
+  transform: scale(1.8);
+  margin-bottom: 250px;
+}
+.center{
+  top: 120%;
+}
+
+.footer{
+  font-size: 15px;
+}
+
+.center{
+  top:100%;
+}
+
+.banner-logo{
+ transform: scale(1.5);
+ margin-bottom: 10%;
+}
+
+.filter-area{
+  margin-bottom: 25%;
+  transform: scale(1.7);
+}
+
+}
+
+@media (min-width: 1024px){
+
+  
+
+  .card{
+    transform: scale(1.5);
+    margin-left: 300px;
+    margin-bottom: 150px;
+
+  }
+  .card-wrap{
+    margin-left: -10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+  }
+  .footer{
+    margin-left: 9%; 
+  }
+
+  .filter-area{
+    margin-bottom: 5%;
+    margin-left: 40%;
+    transform: scale(1.2);
+  }
+.center{
+  top: 75%;
+}
+
+
+
+
+}
+
