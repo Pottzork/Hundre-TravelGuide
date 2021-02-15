@@ -1,7 +1,5 @@
 body {
-    background-color: black;
-    background: url(../images/BackgroundDesktop.jpg);
-    object-fit: cover;
+    background-image: linear-gradient(black, black);
     font-family: 'Cardo', serif;
     margin:0;
   }
@@ -11,6 +9,27 @@ span{
     margin:0;
     padding:0;
 }
+
+.social-media{
+    width:fit-content;
+    margin-left: 35%;
+    transform: scale(1.5);
+}
+
+.social-media i{
+    margin-right: 20px;
+    color:goldenrod;
+}
+
+.social-media i:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.button{
+color: red;
+}
+
 
 
 .nav-link{
@@ -23,10 +42,11 @@ span{
 
 .main-information{
  position: absolute; 
- margin-top: 17%;
- margin-left: 10%;
-    
+ margin-left: 12%;
+ margin-top: 5%;
+ border-top: 2px solid goldenrod;
 }
+
 
 .main-information h1{
     color:white;
@@ -54,29 +74,47 @@ span{
 	 box-sizing: border-box;
 }
 
+.top-banner{
+    background-image: url(../images/BackgroundNoLogo.jpg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.small-logo{
+    position: absolute;
+    top:0;
+    margin-left: 22%;
+    display: block;
+    transform: scale(0.87);
+}
+
 .footer{
     color: white;
-    width: 100%;
     font-size: 10px;
     margin-top: 20px;
     position: absolute;
+    margin-left: 25%;
     bottom:0;
 }
 
+
+
 .wrapper{
-  width:50%;
-  padding-top: 20px;
-    margin-top:200px;
-  float:right;
+  width:80%;
+
+  margin-top:50%;
+  margin-left: 10%;
 }
 h2{
   font-family:sans-serif;
   color:#fff;
 }
 .carousel{
-  width:90%;
+  width:100%;
   margin:0px auto;
 }
+
 
 .slick-slide{
   margin:10px;
@@ -86,8 +124,8 @@ h2{
  .card {
 	 position: relative;
 	 display: flex;
-     max-height: 350px;
-     min-height: 350px;
+     max-height: 200px;
+     min-height: 200px;
 	 align-items: flex-end;
 	 overflow: hidden;	 padding: 1rem;
 	 width: 100%;
@@ -110,19 +148,8 @@ h2{
 	 transition: transform calc(var(--d) * 1.5) var(--e);
 	 pointer-events: none;
 }
- .card:after {
-	 content: '';
-	 display: block;
-	 position: absolute;
-	 top: 0;
-	 left: 0;
-	 width: 100%;
-	 height: 200%;
-	 pointer-events: none;
-	 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
-	 transform: translateY(-50%);
-	 transition: transform calc(var(--d) * 2) var(--e);
-}
+
+
  .card1:before {
 	 background-image: url(https://images.unsplash.com/photo-1612437118912-ec24644cf846?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80);
 }
@@ -141,6 +168,10 @@ h2{
 
 }
 
+.fullscreen-news{
+    display: none;
+}
+
 .cardTitle{
    	 position: relative;
 	 display: flex;
@@ -148,6 +179,8 @@ h2{
 	 align-items: center;
 	 width: 100%;
 	 padding: 1rem;
+     color:white;
+     -webkit-text-stroke: 1px black;
 }
  .content {
 	 position: relative;
@@ -224,173 +257,140 @@ h2{
 	 .card:focus-within:before, .card:focus-within:after, .card:focus-within .content, .card:focus-within .content > *:not(.title) {
 		 transition-duration: 0s;
 	}
-     .footer{
-    color: white;
-    text-align: center;
-    font-size: 10px;
-    margin-top: 20px;
-}
-     
-}
+ }
 
-
-
-@media (max-width: 992px){
-    body{
-        background: url(../images/BackgroundIpad.jpg);
-
-    }
+@media (min-width: 600px){
     
-    .card {
-        margin-top: 20px;
-        max-height: 200px;
-        min-height: 200px;
-        min-width: 350px;
-        max-width: 350px;
-     
-	}
+    .top-banner{
+        height: 400px;
+    }
     .main-information{
-         position: absolute;
-         margin-top: 20px;
-         margin-left: 24px;
-    }
-    .main-information h1{
-        
-        font-size: 3rem;
-    }
-    .main-information span{
-       font-size: 80%;
-        text-align: center;
+        margin-top: -2%;
     }
     .wrapper{
-    width:100%;
-    padding-top: 20px;
-    margin-top:180px;
-    float:none;
-    }    
-     .card:after{
-        width: 0%;
-        height: 0%;
+        margin-top: 25%;
     }
-    .carousel{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-
+    .social-media{
+        margin-top: 15%;
+        margin-left:41%;
     }
-    .card1:before {
-        background-position: center;
-}
- .card2:before {
-        background-position: center;
-}
- .card3:before {
-        background-position: center;
-}
- .card4:before {
-        background-position: center;
-
-}
- .card5:before {
-        background-position: center;
-
-}
-    .top-div{
-        background-image: url(https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)
-    }
-
-    .main-information{
-         position: absolute;
-         margin-top: 20px;
-         margin-left: 40px;
-        
-    }
-    
     .footer{
-    color: white;
-    text-align: center;
-    font-size: 10px;
-    margin-top: 20px;
-    position:inherit;
+        margin-left: 37%;
+    }
+
+    .small-logo{
+        margin-top:5%;
+        margin-left: 35%;
+        transform: scale(1.2);
+    }
+
+    .fullscreen-news{
+        display: none;
+    }
 }
-}
 
-
-@media (max-width: 600px){
-     body{
-         background-image: url(../images/BackgroundMobile.jpg);
-        background-repeat: no-repeat;
-
+@media (min-width: 1024px){
+    body{
+        background-image: url(../images/BackgroundNoLogo.jpg);
+        background-size: cover;
     }
 
-    .card {
-        margin-top: 20px;
-        max-height: 150px;
-        min-height: 150px;
-        min-width: 300px;
-        max-width: 400px;
-     
-	}
-    .main-information{
-         position: absolute;
-         margin-top: 20px;
-         margin-left: 24px;
-    }
-    .main-information h1{
-        
-        font-size: 3rem;
-    }
-    .main-information span{
-       font-size: 80%;
+    .fullscreen-news{
+        display: block;
+        position:absolute;
+        width: 500px;
+        height: 300px;
+        top: 20%;
+        left: 45%;
+        border-radius: 20px;  
+        background-color: rgba(000,000,000, 0.5) ;
+        color: white;
+        padding: 10px;
         text-align: center;
+
     }
+
+    .top-banner{
+        background-image: none;
+        height: 0;
+        width: 0;
+    }
+    .small-logo{
+
+        height: 100px;
+        width: 250px;
+        margin-left: 14%;
+        top: 7%;
+    }
+    .main-information{
+        top:35%;
+    }
+
+    .footer{
+        margin-left: 45%;
+
+    }
+    .social-media{
+        margin-top: 2%;
+        margin-left: 46%;
+    }
+
     .wrapper{
-    width:100%;
-    padding-top: 20px;
-    margin-top:200px;
-    float:none;
+        margin-top: 30%;
     }
+
+
+    .news-box a{
     
-.card1:before {
-        background-position: center;
-}
- .card2:before {
-        background-position: center;
-}
- .card3:before {
-        background-position: center;
-}
- .card4:before {
-        background-position: center;
 
-}
- .card5:before {
-        background-position: center;
-
-}
-    
-    .card:after{
-        width: 0%;
-        height: 0%;
-    }
-  
-
-.carousel{
-        display: inherit;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
+        bottom: 0;
 
     }
-    
-    .wrapper{
-        margin-top: 150px;
+
+    .news-box1 h1::before{
+        content: "Winter is staying in Prague";
+        font-size: 20px;
+        margin-bottom: -5%;
+ 
     }
-    
-.footer{
+    .news-box2 h2::before{
+        content: "summer in Prague";
+        font-size: 20px;
+        margin-bottom: -5%;
+ 
+    }
+    .news-box2 h1::before{
+        content: "Japan";
+        font-size: 20px;
+        margin-bottom: -5%;
+ 
+    }
+    .news-box3 h1::before{
+        content: "bergen";
+        font-size: 20px;
+        margin-bottom: -5%;
+ 
+    }
+
+ .news-box{
+    width: 100%;
     color: white;
-    text-align: center;
-    font-size: 10px;
-    margin-top: 20px;
-    position:inherit;
-}
+ }
+
+
+    .news-box p::before{
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
     }
+
+    
+
+    
+    
+}
+    
+
+
+
+     
+
+
