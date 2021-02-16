@@ -19,7 +19,9 @@ function incrementValue(city) {
     var cityHeart = document.getElementById(city + "Heart")
     var value = parseInt(document.getElementById(city + "Likes").innerHTML);
     value = isNaN(value) ? 0 : value;
+    var newValue = value + 1;
     value++;
+    
     document.getElementById(city + "Likes").innerHTML = value;
 
     if (cityHeart.style.color != "red") {
