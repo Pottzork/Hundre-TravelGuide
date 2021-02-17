@@ -388,7 +388,22 @@ h2{
 
     
 
+    .card1:before{
+        background-position:center;
+    }
     
+    .card2:before{
+        background-position:center;
+    }
+    .card3:before{
+        background-position:center;
+    }
+    .card4:before{
+        background-position:center;
+    }
+    .card5:before{
+        background-position:center;
+    }
     
 }
     
