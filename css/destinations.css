@@ -4,6 +4,25 @@ body {
     margin:0;
   }
 
+  .card-button{
+    margin-left: 40%;
+    height: 50px;
+    
+  }
+
+  .card-button a{
+    transform: scale(2);
+    height: 70%;
+    width: 30%;
+    background-color: rgb(218,165,32, 0.8);
+    color:white;
+  }
+
+  .card-button a:hover{
+    background-color: rgb(218,165,32, 1);
+
+  }
+
 .filter-area{
 display: flex;
 flex-direction: row;

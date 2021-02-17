@@ -115,32 +115,32 @@ function checkboxChecked(boxID) {
 function applyFilter() {
 
 
-    if (filterChecked.includes("beach", "shopping", "beer") && !filterChecked.includes("hiking")) {
-        document.getElementById("bergen").style.display = "none";
-        document.getElementById("prague").style.display = "block";
-        document.getElementById("bali").style.display = "block";
-        document.getElementById("tokyo").style.display = "block";
-        document.getElementById("london").style.display = "block";
+    if (filterChecked.includes("beach", "shopping", "beer")){
+        document.getElementById("Norway").style.display = "none";
+        document.getElementById("Czech").style.display = "block";
+        document.getElementById("Indonesia").style.display = "block";
+        document.getElementById("Japan").style.display = "block";
+        document.getElementById("England").style.display = "block";
         console.log("hideBergen");
 
     }
 
 
     else if (filterChecked.includes("beach", "shopping", "beer", "hiking")) {
-        document.getElementById("bergen").style.display = "block";
-        document.getElementById("prague").style.display = "block";
-        document.getElementById("bali").style.display = "block";
-        document.getElementById("tokyo").style.display = "block";
-        document.getElementById("london").style.display = "block";
+        document.getElementById("Norway").style.display = "block";
+        document.getElementById("Czech").style.display = "block";
+        document.getElementById("Indonesia").style.display = "block";
+        document.getElementById("Japan").style.display = "block";
+        document.getElementById("England").style.display = "block";
         console.log("displayAll");
     }
 
     else {
-        document.getElementById("bergen").style.display = "block";
-        document.getElementById("prague").style.display = "block";
-        document.getElementById("bali").style.display = "block";
-        document.getElementById("tokyo").style.display = "block";
-        document.getElementById("london").style.display = "block";
+        document.getElementById("Norway").style.display = "block";
+        document.getElementById("Czech").style.display = "block";
+        document.getElementById("Indonesia").style.display = "block";
+        document.getElementById("Japan").style.display = "block";
+        document.getElementById("England").style.display = "block";
     }
 }
 
