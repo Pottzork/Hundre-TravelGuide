@@ -1,25 +1,29 @@
 body {
-    background: url('https://images.unsplash.com/photo-1563628657662-9be6896b80bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    font-family: 'Montserrat', sans-serif;
+   background-color: black;
+
     margin:0;
+  }
+
+  .top-banner{
+    background-image: url(../images/BackgroundNoLogo2.jpg);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
 .map{
     margin-top:15px;
     margin-left: auto;
     margin-right: auto;
-    height: 500px;
-    width: 600px;
+    height: 300px;
+    width: 350px;
 }
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 500px;
-  width: 600px;
+  height: 300px;
+  width: 350px;
 }
 
 .map-info{
@@ -40,7 +44,7 @@ body {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #414141;
+    background-color: goldenrod;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -55,8 +59,89 @@ body {
   
   /* Add a background color and some padding around the form */
   .container {
-      margin-top: 100px;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.87);
+    background: rgb(255,255,255, 0.7);
+    background: linear-gradient(5deg, rgba(255,255,255,0.7) 0%, rgba(152,150,150,0.7) 100%);
     padding: 20px;
+    margin-top:-60%;
+    color:white;
   } 
+
+  .submit{
+    margin-bottom: 15%;
+    margin-left: 37%;
+
+  }
+
+  .map-wrapper{
+    text-align: center;
+  }
+  .footer{
+    margin-top: 10%;
+    color: white;
+    margin-left: 26%;
+    font-size: 10px;
+  }
+  @media (min-width: 600px){
+
+    .container{
+      margin-top:-30%;
+    }
+
+    .submit{
+      margin-left: 44%;
+      margin-bottom: 2%;
+    }
+  
+    .map{
+      height: 300px;
+      width: 600px;
+    }
+    .gmap_canvas{
+      height: 300px;
+      width: 600px;
+    }
+
+    .footer{
+      margin-top: 10%;
+      color: white;
+      margin-left: 30%;
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .top-banner{
+      display: none;
+    }
+
+    body{
+      background-image: url(../images/BackgroundNoLogo2.jpg);
+      background-repeat: no-repeat;
+      background-position:top;
+      background-position-y: 20%;
+    }
+
+    .submit{
+      margin-left:46%;
+    }
+
+    .map{
+      height: 400px;
+      width: 700px;
+    }
+    .gmap_canvas{
+      height: 400px;
+      width: 700px;
+    }
+
+    .container{
+      margin-top: 5%;
+    }
+
+    .footer{
+      margin-top:2%;
+      margin-left: 42%;
+    }
+  }
+ 

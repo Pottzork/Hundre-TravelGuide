@@ -4,7 +4,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    font-family: 'Cardo','Montserrat', serif;
+
     margin:0;
   }
 
@@ -69,7 +69,7 @@ body {
     position: absolute;
     top: 40px;
     left: 15px;
-    background-color: rgb(111, 0, 255);
+    background-color:goldenrod;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -107,7 +107,7 @@ body {
       font-family: 'Oswald';
       letter-spacing: 1px;
       font-size: large;
-      background-color: rgb(111, 0, 255);
+      background-color: goldenrod;
   }
   .bg-3 { 
     background-color: #ffffff; /* White */
@@ -120,7 +120,7 @@ body {
     top:50%; 
     left:38%;
     margin-top:20px;
-      background-color: black;
+      background-color: goldenrod;
       justify-content: center;
   }
   .bg-4 { 

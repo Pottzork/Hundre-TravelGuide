@@ -40,3 +40,11 @@ $('.news-carousel').slick({
   speed: 700,
   arrows: false,
 });
+
+$('.image-slide').slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});

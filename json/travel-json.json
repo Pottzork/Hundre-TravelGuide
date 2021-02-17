@@ -2,26 +2,31 @@
     "Bergen": {
         "Country": "Norway",
         "Temperature": -2,
-        "likes": 22
+        "likes": 22,
+        "filter": ["hiking"]
     },
     "London": {
         "Country": "England",
         "Temperature": 5,
-        "likes": 66
+        "likes": 66,
+        "filter": ["beer", "Shopping"]
     },
     "Prague": {
         "Country": "Czech",
         "Temperature": 12,
-        "likes": 32
+        "likes": 32,
+        "filter": ["beer", "Shopping"]
     },
     "Tokyo": {
         "Country": "Japan",
         "Temperature": 22,
-        "likes": 45
+        "likes": 45,
+        "filter": ["hiking", "beer", "Shopping"]
     },
     "Bali": {
         "Country": "Indonesia",
         "Temperature": 33,
-        "likes": 114
+        "likes": 4,
+        "filter": ["beer", "hiking", "beach"]
     }
 }

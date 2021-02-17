@@ -46,30 +46,30 @@
     <div class="filter-area">
       <div class="sort-filter">
         <p>Sort by</p>
-        <select name="filter-by" id="filter-by">
-          <option value="popular">Popular</option>
+        <select name="filter-by" id="selectFilter" onchange="filterSelected()">
+          <option value="popular">Sort by</option>
           <option value="score">Score</option>
-          <option value="New">New</option>
+          <option value="new">New</option>
         </select>
       </div>
       <div class="travel-category">
         <p>Filter by</p>
-        <input type="checkbox" id="beach" name="beach" value="beach">
+        <input type="checkbox" id="beach" onclick="checkboxChecked(this.id)">
         <i class="fas fa-umbrella-beach" alt="Beach Umbrella"></i>
-        <input type="checkbox" id="beach" name="beach" value="beach">
+        <input type="checkbox" id="hiking" onclick="checkboxChecked(this.id)">
         <i class="fas fa-hiking"></i>
-        <input type="checkbox" id="beach" name="beach" value="beach">
+        <input type="checkbox" id="shopping" onclick="checkboxChecked(this.id)">
         <i class="fas fa-shopping-bag"></i>
-        <input type="checkbox" id="beach" name="beach" value="beach">
+        <input type="checkbox" id="beer" onclick="checkboxChecked(this.id)">
         <i class="fas fa-beer"></i>
 
-        <button type="submit">Apply</button>
+        <button type="submit" style="background-color:goldenrod; height:30px" class="btn btn-secondary btn-sm" onclick="applyFilter()">Apply</button>
 
       </div>
     </div>
     <div class="card-wrap">
       <!--card1-->
-      <div class="card">
+      <div class="card bergen" id="Norway">
         <div class="additional card1">
           <div class="user-card">
             <div class="level center">
@@ -109,7 +109,7 @@
               <div>
                 <div class="title">Weather</div>
                 <i class="fa fa-snowflake-o"></i>
-                <div class="value infinity">-2°C</div>
+                <div id="bergenTemperature" class="value infinity"></div>
               </div>
             </div>
           </div>
@@ -121,13 +121,12 @@
         </div>
       </div>
       <!--Card2-->
-      <div class="card">
+      <div class="card prague" id="Czech">
         <div class="additional card2">
           <div class="user-card">
             <div class="level center">
               Prague,
-              <br>
-              Czech Republic
+              Czechia
             </div>
             <div class="points center">
               <i id="pragueLikes" class="fa fa-heart-o" aria-hidden="true"></i>
@@ -162,7 +161,7 @@
               <div class="wrap-icon">
                 <div class="title">Weather</div>
                 <i class="fa fa-snowflake-o"></i>
-                <div class="value infinity">-2°C</div>
+                <div id="pragueTemperature" class="value infinity"></div>
               </div>
             </div>
           </div>
@@ -174,7 +173,7 @@
         </div>
       </div>
       <!--Card3-->
-      <div class="card">
+      <div class="card" id="Indonesia">
         <div class="additional card3">
           <div class="user-card">
             <div class="level center">
@@ -213,7 +212,7 @@
               <div>
                 <div class="title">Weather</div>
                 <i class="fa fa-snowflake-o"></i>
-                <div class="value infinity">-2°C</div>
+                <div id="baliTemperature" class="value infinity"></div>
               </div>
             </div>
           </div>
@@ -225,7 +224,7 @@
         </div>
       </div>
       <!--Card4-->
-      <div class="card">
+      <div class="card" id="Japan">
         <div class="additional card4">
           <div class="user-card">
             <div class="level center">
@@ -265,7 +264,7 @@
               <div>
                 <div class="title">Weather</div>
                 <i class="fa fa-snowflake-o"></i>
-                <div class="value infinity">-2°C</div>
+                <div id="tokyoTemperature" class="value infinity"></div>
               </div>
             </div>
           </div>
@@ -277,7 +276,7 @@
         </div>
       </div>
       <!--Card5-->
-      <div class="card last-card">
+      <div class="card" id="England">
         <div class="additional card5">
           <div class="user-card">
             <div class="level center">
@@ -317,7 +316,7 @@
               <div>
                 <div class="title">Weather</div>
                 <i class="fa fa-snowflake-o"></i>
-                <div class="value infinity">-2°C</div>
+                <div id="londonTemperature" class="value infinity"></div>
               </div>
             </div>
           </div>

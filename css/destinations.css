@@ -161,7 +161,6 @@ margin-right: 40px;
 }
 
 
-
 .card .additional .stats {
   font-size: 2rem;
   display: flex;
@@ -217,9 +216,7 @@ margin-right: 40px;
 }
 
 
-.last-card{
-  margin-bottom: 100px;
-}
+
 
 .like-favorite{
   margin-top:5%;
@@ -244,10 +241,12 @@ margin-right: 40px;
 
 }
 
-
-
+.card-wrap{
+  display: grid;
+}
 
 @media (min-width: 600px){
+ 
 .top-banner{
   height: 650px;
   width: 106.5%;
@@ -264,7 +263,7 @@ margin-right: 40px;
 
  .card{
    transform: scale(1.8);
-   margin-bottom: 25%;
+   margin-bottom: 10%;
    margin-left: 26%;
    margin-top: 10%;
  }
@@ -291,9 +290,10 @@ margin-right: 40px;
 @media (min-width: 1024px){
 
   body{
-    background-image: url(../images/BackgroundNoLogo.jpg);
+    background-image: url(../images/BackgroundNoLogo2.jpg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position:top;
+    background-position-y: 20%;
 
 
   }
@@ -319,10 +319,12 @@ margin-right: 40px;
   
    .card-wrap{
      margin-top: 0;
+    width: 60%;
+    margin-right: 0;
     margin-left: 15%;
     margin-bottom: 10%;
     display: grid;
-    grid-template-columns: 550px 550px;
+    grid-template-columns: auto auto;
     
   }
 

@@ -5,7 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/nav.css">
     <title>Document</title>
 
     <!-- Fonts -->
@@ -26,7 +25,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
+        <script src="https://kit.fontawesome.com/453668cb2b.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -41,6 +40,8 @@
             $("#nav-placeholder").load("nav.html");
         });
     </script>
+
+    <div class="top-banner"></div>
 
     <!-- CONTACT FORM -->
     <div class="container">
@@ -59,7 +60,9 @@
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Ask us anything.." style="height:200px"></textarea>
 
-            <input type="submit" value="Submit">
+            <input class="submit" type="submit" value="Submit">
+            </br>
+            <div class="map-wrapper">
             <span class="map-info">You can find us here</span>
             <div class="map">
                 <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
@@ -67,11 +70,14 @@
                         frameborder="0"></iframe><a href="https://123movies-to-org.blogspot.com"></a><br>
                 </div>
             </div>
-
+            </div>
         </form>
+   
     </div>
 
-
+    <div class="footer">
+        <p>Copyright Ⓒ 2021 Hundré. All Rights Reserved. </p>
+      </div>
 </body>
 
 </html>
