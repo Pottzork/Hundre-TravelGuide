@@ -13,7 +13,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-
+var signedIn = false;
 const auth = firebase.auth();
 
 function signUp() {
@@ -39,6 +39,7 @@ function signIn() {
 function signOut() {
     auth.signOut();
     alert("Signed out");
+    signedIn = false;
 }
 
 auth.onAuthStateChanged(function (user) {
@@ -53,7 +54,7 @@ auth.onAuthStateChanged(function (user) {
         document.getElementById("loginForm").style.display = "none";
         document.getElementById("userDisplayText").style.display = "inline-block";
         document.getElementById("userDisplayText").textContent = "Signed in as: " + email;
-
+        signedIn = true;
     } else {
         //no user is signed in
 

@@ -45,16 +45,21 @@ function incrementValue(city) {
     var cityHeart = document.getElementById(city + "Heart")
     var value = parseInt(document.getElementById(city + "Likes").innerHTML);
     value = isNaN(value) ? 0 : value;
-    var newValue = value + 1;
-    value++;
-    
-    document.getElementById(city + "Likes").innerHTML = value;
 
-    if (cityHeart.style.color != "red") {
-        cityHeart.style.color = "red";
-    } if (cityHeart.style.color == "red") {
-        cityHeart.style.color = "none";
+    if (signedIn == true) {
+        value++;
+        document.getElementById(city + "Likes").innerHTML = value;
+
+        if (cityHeart.style.color != "red") {
+            cityHeart.style.color = "red";
+        } if (cityHeart.style.color == "red") {
+            cityHeart.style.color = "none";
+        }
+
+    } else if (signedIn == false) {
+        alert("You must be signed in to vote");
     }
+
 
 }
 
@@ -62,83 +67,82 @@ function incrementValue(city) {
 var filterChecked = [];
 
 
-function filterSelected(){
-    
-    if(document.getElementById("selectFilter").value == "score"){
-        
-        cityArr.sort(function(a, b){
+function filterSelected() {
+
+    if (document.getElementById("selectFilter").value == "score") {
+
+        cityArr.sort(function (a, b) {
             return parseFloat(b.likes) - parseFloat(a.likes);
         })
-        for(i in cityArr){
-            var row = i+1;
-            document.getElementById(cityArr[i].Country).style.gridRow=row;
+        for (i in cityArr) {
+            var row = i + 1;
+            document.getElementById(cityArr[i].Country).style.gridRow = row;
             row++;
             console.log(row);
         }
     }
-    if(document.getElementById("selectFilter").value == "new"){
-        
-        cityArr.sort(function(a, b){
+    if (document.getElementById("selectFilter").value == "new") {
+
+        cityArr.sort(function (a, b) {
             return parseFloat(a.likes) - parseFloat(b.likes);
         })
-        for(i in cityArr){
-            var row = i+1;
-            document.getElementById(cityArr[i].Country).style.gridRow=row;
+        for (i in cityArr) {
+            var row = i + 1;
+            document.getElementById(cityArr[i].Country).style.gridRow = row;
             row++;
             console.log(row);
         }
-        document.getElementById("Indonesia").style.gridrow=1;
+        document.getElementById("Indonesia").style.gridrow = 1;
     }
 
 }
 
-function checkboxChecked(boxID){
+function checkboxChecked(boxID) {
     var checkedBox = document.getElementById(boxID);
 
-    if(checkedBox.checked == true)
-    {
+    if (checkedBox.checked == true) {
         filterChecked.push(boxID);
         console.log(boxID + "checked");
     }
-    else{
-        
+    else {
+
         filterChecked = filterChecked.filter(e => e !== boxID);
-        console.log("filtered: " + boxID +"array: " + filterChecked);
-}
-console.log(filterChecked);
+        console.log("filtered: " + boxID + "array: " + filterChecked);
+    }
+    console.log(filterChecked);
 }
 
-function applyFilter(){
-   
-    
-    if(filterChecked.includes("beach", "shopping", "beer") && !filterChecked.includes("hiking")){
-        document.getElementById("bergen").style.display= "none";
-        document.getElementById("prague").style.display= "block";
-        document.getElementById("bali").style.display= "block";
-        document.getElementById("tokyo").style.display= "block";
-        document.getElementById("london").style.display= "block";   
-        console.log("hideBergen");  
+function applyFilter() {
+
+
+    if (filterChecked.includes("beach", "shopping", "beer") && !filterChecked.includes("hiking")) {
+        document.getElementById("bergen").style.display = "none";
+        document.getElementById("prague").style.display = "block";
+        document.getElementById("bali").style.display = "block";
+        document.getElementById("tokyo").style.display = "block";
+        document.getElementById("london").style.display = "block";
+        console.log("hideBergen");
 
     }
 
 
-   else if(filterChecked.includes("beach", "shopping", "beer", "hiking")){
-        document.getElementById("bergen").style.display= "block";
-        document.getElementById("prague").style.display= "block";
-        document.getElementById("bali").style.display= "block";
-        document.getElementById("tokyo").style.display= "block";
-        document.getElementById("london").style.display= "block";   
-        console.log("displayAll");  
-    }     
-
-    else{
-        document.getElementById("bergen").style.display= "block";
-        document.getElementById("prague").style.display= "block";
-        document.getElementById("bali").style.display= "block";
-        document.getElementById("tokyo").style.display= "block";
-        document.getElementById("london").style.display= "block";
+    else if (filterChecked.includes("beach", "shopping", "beer", "hiking")) {
+        document.getElementById("bergen").style.display = "block";
+        document.getElementById("prague").style.display = "block";
+        document.getElementById("bali").style.display = "block";
+        document.getElementById("tokyo").style.display = "block";
+        document.getElementById("london").style.display = "block";
+        console.log("displayAll");
     }
-  }
+
+    else {
+        document.getElementById("bergen").style.display = "block";
+        document.getElementById("prague").style.display = "block";
+        document.getElementById("bali").style.display = "block";
+        document.getElementById("tokyo").style.display = "block";
+        document.getElementById("london").style.display = "block";
+    }
+}
 
 // function incrementValue() {
 //     var bergenHeart = document.getElementById('bergenHeart')
