@@ -43,6 +43,8 @@ $('.news-carousel').slick({
 
 $('.image-slide').slick({
   dots: false,
+  slidesToShow: 3,
+  centerMode: true,
   infinite: true,
   speed: 500,
   fade: true,

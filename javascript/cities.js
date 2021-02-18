@@ -41,12 +41,14 @@ fetch("../json/travel-json.json")
     })
 
 
+
 function incrementValue(city) {
     var cityHeart = document.getElementById(city + "Heart")
     var value = parseInt(document.getElementById(city + "Likes").innerHTML);
     value = isNaN(value) ? 0 : value;
 
-    if (signedIn == true) {
+if (signedIn == true) {
+        if(localStorage.getItem(city + "Likes" ) !== "finished"){
         value++;
         document.getElementById(city + "Likes").innerHTML = value;
 
@@ -55,8 +57,10 @@ function incrementValue(city) {
         } if (cityHeart.style.color == "red") {
             cityHeart.style.color = "none";
         }
-
-    } else if (signedIn == false) {
+    localStorage.setItem(city+ "Likes", "finished");
+    } 
+}
+    else if (signedIn == false) {
         alert("You must be signed in to vote");
     }
 
@@ -143,23 +147,3 @@ function applyFilter() {
         document.getElementById("England").style.display = "block";
     }
 }
-
-// function incrementValue() {
-//     var bergenHeart = document.getElementById('bergenHeart')
-//     var value = parseInt(document.getElementById('bergenLikes').innerHTML);
-//     value = isNaN(value) ? 0 : value;
-//     value++;
-//     document.getElementById('bergenLikes').innerHTML = value;
-
-
-//     if (bergenHeart.style.color != "red") {
-//         bergenHeart.style.color = "red";
-//     } if (bergenHeart.style.color == "red") {
-//         ergenHeart.style.color = "none";
-//     }
-
-
-// data.destinations['Europe'][0].country   // Sentra
-// data.destinations['Europe'][0].city   // Maxima
-// data.destinations['Europe'][0].likes   // 2
-
